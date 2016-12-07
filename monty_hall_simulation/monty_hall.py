@@ -70,8 +70,9 @@ class MontyHallSimulator:
 def main():
     sim = MontyHallSimulator(reselect=True)
     sim.run_single_game()
+
     for probability_result in sim.run():
         print(probability_result)
 
-
-main()
+if __name__ == '__main__':
+    main()
