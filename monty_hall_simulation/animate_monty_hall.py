@@ -12,6 +12,7 @@ sim = MontyHallSimulator()
 result_iter = sim.run()
 
 def init():
+    plt.show()
     line.set_data([], [])
     return line,
 
@@ -26,6 +27,7 @@ def animate(i):
 anim = animation.FuncAnimation(fig, animate, init_func=init,
                                frames=20000, interval=20, blit=True)
 
-anim.save('monty_hall_simulation.mp4', fps=30, extra_args=['-vcodec', 'libx264'])
+# anim.save('monty_hall_simulation.mp4', fps=30, extra_args=['-vcodec', 'libx264'])
 if __name__ == '__main__':
+
     plt.show()
